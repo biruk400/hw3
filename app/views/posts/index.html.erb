@@ -1,0 +1,15 @@
+
+
+<h1>Posts Index</h1>
+
+<p>Things You've Done:</p>
+
+<ul>
+  <% for post in @posts %>
+    <li>
+      <a href="/post/<%= post["id"]%>"</a> <%= post["name"] %>  
+    </li>
+  <% end %>
+</ul>
+
+<p> <a href="/places/new/" class="btn btn-success">New Post</a> </p>
